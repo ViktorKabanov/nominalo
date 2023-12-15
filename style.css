@@ -1,5 +1,5 @@
 :root {
-    font-size: calc(20px + (12 * (100vw - 320 px) / 880));
+    font-size: calc(22px + (12 * (100vw - 320 px) / 880));
 }
 
 body {
