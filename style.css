@@ -1,0 +1,619 @@
+body {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 94vw;
+    margin: 0 auto;
+    border: 1px dashed #fe422b;
+}
+
+/* ============ header =========================== */
+
+header {
+
+    margin-bottom: 19.69vw;
+}
+
+/* =============== header switch lang ================= */
+
+.swich-container {
+    margin-top: 5.625vw;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-en,
+.btn-ru {
+    width: 7vw;
+    height: 5.25vw;
+    border-radius: 0.7vw;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px dashed #0039a6;
+}
+
+.btn-en {
+    background-image: url(img/en.png);
+
+}
+
+.btn-ru {
+    background-image: url(img/ru.png);
+    margin: 0 3vw;
+}
+
+
+
+/* =============== header animation ============= */
+
+h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    width: 100vw;
+    box-sizing: border-box;
+    font-size: 1.8em;
+    font-weight: bold;
+    background: #FFF673;
+    margin: 0 0 0 -3vw;
+    padding: 3.93vw 3vw;
+    border-block: 1px dashed #41FF81;
+}
+
+.cash {
+    color: #41FF81;
+}
+
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+    .nominalo {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 48%, rgba(255, 255, 255, 1) 49%, rgb(255, 246, 115) 50%, rgba(255, 255, 255, 1) 51%, rgba(0, 0, 0, 1) 52%);
+        background-size: 220%;
+        background-position: right;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: nominalo 0.9s 1 linear forwards 0.5s;
+    }
+
+
+    @keyframes nominalo {
+        from {
+            background-position: right;
+        }
+
+        to {
+            background-position: left;
+        }
+    }
+
+    .cash {
+        background: linear-gradient(90deg, rgba(65, 255, 129, 1) 48%, rgba(255, 255, 255, 1) 49%, #FFF673 50%, rgba(255, 255, 255, 1) 51%, rgba(65, 255, 129, 1) 52%);
+        background-size: 220%;
+        background-position: right;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: cash 0.50s 1 linear forwards 1.4s;
+    }
+
+    @keyframes cash {
+        from {
+            background-position: right;
+        }
+
+        to {
+            background-position: left;
+        }
+    }
+
+    .slogan {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 49%, rgba(255, 255, 255, 1) 50%, #FFF673 51%);
+        background-size: 220%;
+        background-position: right;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: slogan 3.1s 1 linear forwards 1.9s;
+    }
+
+    @keyframes slogan {
+        from {
+            background-position: right;
+        }
+
+        to {
+            background-position: left;
+        }
+    }
+}
+
+/* ================= main =================== */
+
+.img-1,
+.img-3,
+.img-4,
+.img-5,
+.img-6,
+.img-7,
+.comp {
+    display: none;
+}
+
+h2,
+h3 {
+    display: inline;
+}
+
+.flag,
+.svg-red {
+    margin-left: -0.25em;
+}
+
+section {
+    margin-bottom: 17vw;
+}
+
+.section2-bottom {
+    padding-left: 6vw;
+    margin-top: 12vw;
+}
+
+.section2-small {
+    margin-bottom: 0;
+    margin-top: 3vw;
+}
+
+.svg-red {
+    width: 2em;
+    height: 2em;
+}
+
+/* =========== кнопки ========= */
+
+button {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.start-btn,
+.api-btn {
+    width: 30vw;
+    height: 8vw;
+    border: none;
+    border-radius: 0.8vw;
+}
+
+.start-btn {
+    background-color: #41FF81;
+}
+
+.start-btn:active {
+    background-color: #2eb35a;
+}
+
+.api-btn {
+    background-color: #ff9dd0;
+}
+
+.api-btn:active {
+    background-color: #995e7d;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-group .api-btn {
+    margin-top: 5vw;
+
+}
+
+/* ======== footer ======================== */
+
+footer {
+    width: 100%;
+    height: 20vw;
+}
+
+.up-btn {
+    width: 32vw;
+    height: 8vw;
+    margin: 6vw 0 0 60%;
+    background-color: #FFF673;
+    border: none;
+    border-radius: 0.8vw;
+}
+
+.up-btn::after {
+    content: " \21e7";
+}
+
+.up-btn:active {
+    background-color: #ccc871;
+}
+
+/* ================== планшет ==================== */
+
+@media (min-width: 768px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 92vw;
+        border: none;
+    }
+
+    /* =================== кнопки ========================= */
+    .btn-en,
+    .btn-ru {
+        width: 6vw;
+        height: 4vw;
+    }
+
+    .start-btn {
+        background: rgb(65, 255, 129);
+        background: linear-gradient(90deg, rgba(65, 255, 129, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(65, 255, 129, 1) 60%);
+        background-position: right;
+        background-size: 240%;
+    }
+
+    .start-btn:hover {
+        animation: start-btn 2.5s infinite linear;
+    }
+
+    @keyframes start-btn {
+        0% {
+            background-position: right;
+        }
+
+        50% {
+            background-position: left;
+        }
+
+        100% {
+            background-position: right;
+        }
+
+    }
+
+    .api-btn {
+        background: rgb(255, 157, 208);
+        background: linear-gradient(90deg, rgba(255, 157, 208, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(255, 157, 208, 1) 60%);
+        background-position: right;
+        background-size: 240%;
+    }
+
+    .api-btn:hover {
+        animation: api-btn 2.5s infinite linear;
+    }
+
+    @keyframes api-btn {
+        0% {
+            background-position: right;
+        }
+
+        50% {
+            background-position: left;
+        }
+
+        100% {
+            background-position: right;
+        }
+
+    }
+
+    .up-btn {
+        background: rgb(255, 246, 115);
+        background: linear-gradient(90deg, rgba(255, 246, 115, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(255, 246, 115, 1) 60%);
+        background-position: right;
+        background-size: 240%;
+    }
+
+    .up-btn:hover {
+        animation: up-btn 2.5s infinite linear;
+    }
+
+    @keyframes up-btn {
+        0% {
+            background-position: right;
+        }
+
+        50% {
+            background-position: left;
+        }
+
+        100% {
+            background-position: right;
+        }
+
+    }
+
+    /* ==================== закончились кнопки =============== */
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    header p {
+        text-align: center;
+        margin-left: -4vw;
+    }
+
+    .section2 h2 {
+        display: block;
+        text-align: center;
+    }
+
+    .flag {
+        display: none;
+    }
+
+    .api-btn,
+    .start-btn,
+    .up-btn {
+        width: 22vw;
+        height: 5vw;
+    }
+
+    section {
+        margin-bottom: 12vw;
+    }
+
+    .img-1,
+    .img-3,
+    .img-4,
+    .img-5,
+    .img-6,
+    .img-7 {
+        display: block;
+    }
+
+    /* ================= section 1 ============ */
+    .section1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section1-text {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 2vw;
+    }
+
+    /* =================== section 2 ================== */
+
+    .section2-bottom {
+        width: 100vw;
+        height: 52vw;
+        margin-left: -3vw;
+        margin-top: 0;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/map.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 0 0;
+    }
+
+    .section2-small {
+        width: 22vw;
+        margin: 0 2.2vw;
+        border-radius: 1vw;
+        padding: 1.5vw;
+        -webkit-box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.22);
+        -moz-box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.22);
+        box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    .svg-red {
+        width: 1.1em;
+        height: 1.1em;
+    }
+
+    /* ================ section 3 ============================= */
+
+    .section3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section3-text {
+        width: 33%;
+    }
+
+    /* ==================== section 4 =============================== */
+
+    .section4 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section4-text {
+        width: 33%;
+        display: flex;
+        margin-top: 0;
+        padding-left: 2.5vw;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* ======================= section 5 ======================== */
+
+    .section5 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section5-text {
+        width: 33%;
+    }
+
+    /* ================== section 6 ====================== */
+
+    .section6 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section6-text {
+        width: 33%;
+    }
+
+    /* =================== section 7 ====================== */
+
+    .section7 {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        margin-left: -4vw;
+        padding-left: 3vw;
+        margin-bottom: 0;
+        position: relative;
+        background-color: #d7d8ff;
+    }
+
+    .section7-text {
+        width: 33%;
+        padding-top: 3vw;
+    }
+
+    .btn-group .api-btn {
+        margin-top: 3vw;
+    }
+
+    .btn-group {
+        position: relative;
+    }
+
+    .comp {
+        display: block;
+        position: absolute;
+        top: -2vw;
+        left: 33vw;
+    }
+
+    /* ================== footer ======================== */
+
+    footer {
+        width: 100vw;
+        margin-left: -4vw;
+        background-color: #d7d8ff;
+    }
+
+}
+
+/* ================ монтор больше 1200px =================== */
+
+@media (min-width: 1200px) {
+
+    body {
+        font-size: 22px;
+    }
+
+    .container {
+        width: 1200px;
+    }
+
+    header {
+        margin-bottom: 120px;
+    }
+
+    header p {
+        width: 100%;
+        padding: 40px 0;
+        margin-left: 0;
+    }
+
+    .btn-en,
+    .btn-ru {
+        width: 72px;
+        height: 48px;
+    }
+
+    .start-btn,
+    .api-btn {
+        width: 70%;
+        height: 80px;
+    }
+
+    .up-btn {
+        width: 22%;
+        height: 80px;
+        margin-top: 100px;
+    }
+
+    .swich-container {
+        margin-top: 40px;
+    }
+
+    section {
+        margin-bottom: 100px;
+    }
+
+    .section1 button,
+    .section4 button {
+        margin-top: 40px;
+    }
+
+    .section2-bottom {
+        width: 100%;
+        height: 500px;
+        margin-left: 0;
+    }
+
+    .section2-small {
+        width: 240px;
+        margin: 0 30px;
+    }
+
+    .section7 {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+
+    .btn-group {
+        margin-top: 60px;
+    }
+
+    .btn-group .api-btn {
+        margin-top: 30px;
+    }
+
+    .comp {
+        top: -10px;
+        left: 95%;
+    }
+
+    footer {
+        width: 100%;
+        height: 300px;
+        margin-left: 0;
+    }
+
+    button {
+        font-size: 27px;
+    }
+}
